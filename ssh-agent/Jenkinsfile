@@ -1,0 +1,7 @@
+node {
+  stage('do something with git') {
+    sshagent (credentials: ['github-key']) {
+      sh 'git ls-remote -h --refs git@github.com:emaillalit/git-demo.git main | awk "{print $1}"'
+    }
+  }
+}
