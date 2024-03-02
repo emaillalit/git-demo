@@ -5,9 +5,6 @@ job('NodeJS-Exe-From-Seed') {
             node / gitConfigEmail('email_lalit@hotmail.com')
         }
     }
-    dir("jenkins-course/job-dsl") {
-        sh "pwd"
-    }
     triggers {
         scm('H/10 * * * *')
     }
@@ -16,6 +13,9 @@ job('NodeJS-Exe-From-Seed') {
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
     }
     steps {
-        shell("npm install")
+        dir("jenkins-course/job-dsl") {
+            shell("pwd")
+            shell("npm install")
+        }
     }
 }
