@@ -14,7 +14,7 @@ job('NodeJS-Exe-From-Seed') {
     }
     steps {
         shell('pwd')
-        shell("cd jenkins-course/job-dsl/")
+        shell("cd ${WORKSPACE}/jenkins-course/job-dsl")
         shell('pwd')
         shell("npm install")
     }
