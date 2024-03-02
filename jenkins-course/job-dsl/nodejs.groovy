@@ -5,6 +5,9 @@ job('NodeJS-Exe-From-Seed') {
             node / gitConfigEmail('email_lalit@hotmail.com')
         }
     }
+    dir("jenkins-course/job-dsl") {
+        sh "pwd"
+    }
     triggers {
         scm('H/10 * * * *')
     }
