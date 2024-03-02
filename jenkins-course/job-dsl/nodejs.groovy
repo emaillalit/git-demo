@@ -13,7 +13,7 @@ job('NodeJS-Exe-From-Seed') {
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
     }
     steps {
-        dir("jenkins-course/job-dsl") {
+        dir('jenkins-course/job-dsl') {
             shell("pwd")
             shell("npm install")
         }
