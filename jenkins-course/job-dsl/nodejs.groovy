@@ -1,4 +1,4 @@
-job('NodeJS example') {
+job('NodeJS-Exe-From-Seed') {
     scm {
         git('https://github.com/emaillalit/git-demo.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
@@ -6,7 +6,7 @@ job('NodeJS example') {
         }
     }
     triggers {
-        scm('H/5 * * * *')
+        scm('H/10 * * * *')
     }
     wrappers {
         nodejs('nodejs') // this is the name of the NodeJS installation in 
