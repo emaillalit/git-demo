@@ -7,7 +7,7 @@ job('NodeJS-Exe-From-Seed') {
     }
     //triggers {
     //    scm('H/10 * * * *')
-    /}
+    //}
     wrappers {
         nodejs('nodejs') // this is the name of the NodeJS installation in 
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
