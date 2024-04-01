@@ -5,9 +5,9 @@ job('NodeJS-Exe-From-Seed') {
             node / gitConfigEmail('email_lalit@hotmail.com')
         }
     }
-    triggers {
-        scm('H/10 * * * *')
-    }
+    //triggers {
+    //    scm('H/10 * * * *')
+    /}
     wrappers {
         nodejs('nodejs') // this is the name of the NodeJS installation in 
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
