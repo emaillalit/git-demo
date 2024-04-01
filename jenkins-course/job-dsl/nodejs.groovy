@@ -14,7 +14,7 @@ job('NodeJS-Exe-From-Seed') {
     }
     steps {
         shell('pwd')
-        cd ('docker-demo')
+        shell ('cd docker-demo')
         shell("npm install")
     }
 }
