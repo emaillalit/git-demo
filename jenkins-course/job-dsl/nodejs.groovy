@@ -14,7 +14,7 @@ job('NodeJS-Exe-From-Seed') {
     }
     steps {
         shell('pwd')
-        dir('/var/lib/jenkins/workspace/NodeJS-Exe-From-Seed/docker-demo') {
+        dir('./docker-demo') {
             shell('pwd')
         }
         //shell("npm install")
